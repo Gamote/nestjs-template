@@ -1,6 +1,6 @@
 # Nest.js Template
 
-A quick way to get going with stuff that I would to any Nest.js project.
+A quick way to get going with stuff that I would do in any Nest.js project.
 
 Tech:
 - Typescript (with strict mode)
