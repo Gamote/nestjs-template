@@ -13,11 +13,11 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "paths": {
-      "@lib/typed-config": [
-        "libs/typed-config/src"
+      "@lib/common": [
+        "libs/common/src"
       ],
-      "@lib/typed-config/*": [
-        "libs/typed-config/src/*"
+      "@lib/common/*": [
+        "libs/common/src/*"
       ]
     }
   }

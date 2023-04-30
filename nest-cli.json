@@ -7,13 +7,13 @@
     "webpack": true
   },
   "projects": {
-    "typed-config": {
+    "common": {
       "type": "library",
-      "root": "libs/typed-config",
+      "root": "libs/common",
       "entryFile": "index",
-      "sourceRoot": "libs/typed-config/src",
+      "sourceRoot": "libs/common/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/typed-config/tsconfig.lib.json"
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
       }
     }
   }

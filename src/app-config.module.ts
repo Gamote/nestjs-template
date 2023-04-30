@@ -1,4 +1,4 @@
-import { typedConfigFactory } from '@lib/typed-config';
+import { typedConfigFactory } from '@lib/common';
 import { z } from 'zod';
 
 /**
