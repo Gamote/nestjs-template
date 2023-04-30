@@ -10,7 +10,7 @@ const main = async () => {
 
   const app = await NestFactory.create(AppModule, fastifyAdapter);
 
-  app.useGlobalPipes(new ValidationPipe({ transform: true }));
+  app.useGlobalPipes(new ValidationPipe());
 
   const appConfigService = app.get(AppConfigService);
 
