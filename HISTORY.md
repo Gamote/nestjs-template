@@ -15,3 +15,4 @@
 - Add `.env*` to `.gitignore`
 - Create a common lib `@lib/common` using `nest g lib common`.
 - Create an `AppConfigModule` that exports a service called `AppConfigService` which provides an already typed version for the `ConfigService.get()` method. We have also used `zod` to validate the environment variables ([read more](https://docs.nestjs.com/techniques/configuration#configuration)). All of this were wrapped in a library, so we can reuse it in other projects. 
+- Added URI versioning to the API. [read more](https://docs.nestjs.com/techniques/versioning#uri-versioning-type)

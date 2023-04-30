@@ -1,4 +1,4 @@
-import { Logger, ValidationPipe } from '@nestjs/common';
+import { Logger, ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
 
@@ -9,6 +9,12 @@ const main = async () => {
   const fastifyAdapter = new FastifyAdapter();
 
   const app = await NestFactory.create(AppModule, fastifyAdapter);
+
+  // Enable the URI versioning for the API.
+  // See https://docs.nestjs.com/techniques/versioning#uri-versioning-type
+  app.enableVersioning({
+    type: VersioningType.URI,
+  });
 
   app.useGlobalPipes(new ValidationPipe());
 
